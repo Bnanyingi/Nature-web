@@ -11,14 +11,14 @@
         background-color: rgba($color-white, .5);
         color: inherit;
         border: none;
-        border-bottom: 3px solid $color-primary;
+        // border-bottom: 3px solid $color-primary;
         width: 90%;
         display: block;
 
         &:focus{
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
-            border-bottom: 3px solid $color-primary;
+            border-bottom: 3px solid $color-primary; 
         }
 
         &:focus:invalid {
@@ -39,7 +39,7 @@
 
     &__label{
         font-size: 1.2rem;
-        
+
 
     }
 }
