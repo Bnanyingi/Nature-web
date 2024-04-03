@@ -33,6 +33,8 @@ $breakpoint argument choices:
 
  1em = 16px default for browsers
 
+ ORDER: Base + typography > general layout + grid > page layout > component
+
 */
 @mixin respond($breakpoint) {
     @if $breakpoint== phone {
