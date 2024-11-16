@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/icon-fonts.css">
+        <!-- <link rel="stylesheet" href="css/icon-fonts.css"> -->
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,7 +103,26 @@
 
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="img/naturetrail.jpeg" alt=""
+                          
+                            <img srcset="img/naturetrail.jpeg 300w, img/globe_nature.jpeg 1000w" 
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            alt="photo1"class="composition__photo
+                            composition__photo--p1" src="img/naturetrail.jpeg" >
+
+
+                            <img srcset="img/naturetrail.jpeg 300w, img/globe_nature.jpeg 1000w" 
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            alt="photo1"class="composition__photo
+                            composition__photo--p2" src="img/naturetrail.jpeg" >
+
+
+                            <img srcset="img/naturetrail.jpeg 300w, img/globe_nature.jpeg 1000w" 
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            alt="photo1"class="composition__photo
+                            composition__photo--p3" src="img/naturetrail.jpeg" >
+
+
+                            <!-- <img src="img/naturetrail.jpeg" alt=""
                                 class="composition__photo
                                 composition__photo--p1">
                             <img src="img/nat-1.jpeg" alt=""
@@ -111,7 +130,7 @@
                                 composition__photo--p2">
                             <img src="img/nat-2.jpeg" alt=""
                                 class="composition__photo
-                                composition__photo--p3">
+                                composition__photo--p3"> -->
 
                         </div>
                     </div>
@@ -455,7 +474,11 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/treelogo.png" alt="Full logo" class="footer__logo">
+                <picture class="footer__logo">
+                    <source srcset="img/icon_tree.png" media="(max-width: 37.5em)">
+                    <img srcset="img/icon_tree.png 1x,img/treelogo.png 2x" alt="Full logo" src="img/treelogo.png">
+                </picture>
+               
             </div>
             <div class="row">
                 <div class="col-1-of-2">
